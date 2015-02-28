@@ -7,7 +7,14 @@ include "app/app_sub.php";
 include "app/config.php";
 include "app/detect.php";
 
-$db = new APP_DB("localhost","root","medan_app","");
+//////////////////////////////////////////////////////
+// Informasi Admin Database
+// User : admin_kombur
+// Pass	: kombur
+
+//Variabel FILE_PREFIX berada pada file config.php
+
+$db = new APP_DB("localhost","admin_kombur","medan_app","kombur");
 
 // APP Object Sub Class
 $sub = new APP_SUB();
